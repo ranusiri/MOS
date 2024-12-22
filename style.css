@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#ceterName{
+    text-align: center;
+    background-color: rgb(153, 141, 14);
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+</head>
+<body>
+    <h1>MOS Burgers</h1>
+    <table>
+        <tr>
+            <center>
+                <img src="img\main.jpg" alt="" width="100%" height="525px"> 
+            </center>   
+        </tr>
+    </table>
+    <div class="w3-container w3-light-green w3-padding-5 w3-xxlarge" id="menu">
+        <div class="w3-content">
+        
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+          <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Burgers');" id="myLink">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Burgers</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Submarines');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Submarines</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Fries');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Fries</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+              </a>
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Chicken');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Chicken</div>
+              </a>
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+              </a>
+          </div>
+      
+          <div id="Burgers" class="w3-container menu w3-padding-32 w3-white">
+            <table border="3">
+                <tr>
+                    <th colspan="4" id="ceterName">Burgers</th>
+                </tr>
+                <tr>
+                    <td colspan="4"><img src="img\Burger.jpg" alt="" width="951px"></td>
+                </tr>
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Price(LKR)</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>B1001</td>
+                    <td>Clasic Burger(Large)</td>
+                    <td>750.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1002</td>
+                    <td>Classic Burger(Regular)</td>
+                    <td>1500.00</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>B1003</td>
+                    <td>Turkey Burger</td>
+                    <td>1600.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1004</td>
+                    <td>Chicken Burger(Large)</td>
+                    <td>1400.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1005</td>
+                    <td>Chicken Burger(Regular)</td>
+                    <td>800.00</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>B1006</td>
+                    <td>Cheese Burger(Large)</td>
+                    <td>1000.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1007</td>
+                    <td>Cheese Burger(Regular)</td>
+                    <td>600.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1008</td>
+                    <td>Bacon Burger</td>
+                    <td>650.00</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>B1009</td>
+                    <td>Shawama Burger</td>
+                    <td>800.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1010</td>
+                    <td>Olive Burger</td>
+                    <td>1800.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1011</td>
+                    <td>Double-Cheese Burger</td>
+                    <td>1250.00</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>B1013</td>
+                    <td>Crispy Chicken Burger(Regular)</td>
+                    <td>1200.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1014</td>
+                    <td>Crispy Chicken Burger(Large)</td>
+                    <td>1600.00</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>B1015</td>
+                    <td>Paneer Burger</td>
+                    <td>900.00</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Submarines" class="w3-container menu w3-padding-32 w3-white">
+            <table border="1">
+                <tr>
+                    <th colspan="4" id="ceterName">Submarines</th>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="4"><img src="img\Submarine.jpg" alt="" width="951px"></td>
+            </tr>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price(LKR)</th>
+                <th>Discount</th>
+            </tr>
+             <tr>
+                    <td>B1016</td>
+                    <td>Crispy Chicken Submarine(Large)</td>
+                    <td>2000.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1017</td>
+                    <td>Crispy Chicken Submarine(Regular)</td>
+                    <td>1500.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1018</td>
+                    <td>Chicken Submarime(Large)</td>
+                    <td>1800.00</td>
+                    <td>3%</td>
+                </tr>
+                <tr>
+                    <td>B1019</td>
+                    <td>Chicken Submarime(Regular)</td>
+                    <td>1400.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1020</td>
+                    <td>Grinder Submarine</td>
+                    <td>2300.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1021</td>
+                    <td>Cheese Submarine</td>
+                    <td>2200.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1022</td>
+                    <td>Double Cheese n Chicken Submarine</td>
+                    <td>1900.00</td>
+                    <td>16%</td>
+                </tr>
+                <tr>
+                    <td>B1023</td>
+                    <td>Special Horgie Submarine</td>
+                    <td>2800.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1024</td>
+                    <td>MOS Special Submarine</td>
+                    <td>3000.00</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Fries" class="w3-container menu w3-padding-32 w3-white">
+            <table border="1">
+                <tr>
+                    <th colspan="4" id="ceterName">Fries</th>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="4"><img src="img\Fries.jpg" alt="" width="951px"></td>
+            </tr>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price(LKR)</th>
+                <th>Discount</th>
+            </tr>
+                <tr>
+                    <td>B1025</td>
+                    <td>Steak Fries(Large)</td>
+                    <td>1200.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1026</td>
+                    <td>Steak Fries(Medium)</td>
+                    <td>600.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1027</td>
+                    <td>French Fries(Large)</td>
+                    <td>800.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1028</td>
+                    <td>French Fries(Medium)</td>
+                    <td>650.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1029</td>
+                    <td>French Fries(Smalll)</td>
+                    <td>450.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1030</td>
+                    <td>Sweet Potato Fries</td>
+                    <td>450.00</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+            <table border="1">
+                <tr>
+                    <th colspan="4" id="ceterName">Pasta</th>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="4"><img src="img\Pasta.jpg" alt="" width="951px"></td>
+            </tr>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price(LKR)</th>
+                <th>Discount</th>
+            </tr>
+                <tr>
+                    <td>B1031</td>
+                    <td>Chicken n Cheese Pasta</td>
+                    <td>1600.00</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>B1032</td>
+                    <td>Chicken Penne Pasta</td>
+                    <td>1700.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1033</td>
+                    <td>Ground Turkey Pasta Bake</td>
+                    <td>2900.00</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>B1034</td>
+                    <td>Creamy Shrimp Pasta</td>
+                    <td>2000.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1035</td>
+                    <td>Lemon Butter Pasta</td>
+                    <td>1950.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1036</td>
+                    <td>Tegliatelle Pasta</td>
+                    <td>2400.00</td>
+                    <td>1%</td>
+                </tr>
+                <tr>
+                    <td>B1037</td>
+                    <td>Baked Ravioli</td>
+                    <td>2000.00</td>
+                    <td>1%</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Chicken" class="w3-container menu w3-padding-32 w3-white">
+            <table border="1">
+                
+                <tr>
+                    <th colspan="4" id="ceterName">Chicken</th>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="4"><img src="img\Chicken.jpg" alt="" width="951px"></td>
+            </tr>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price(LKR)</th>
+                <th>Discount</th>
+            </tr>
+                <tr>
+                    <td>B1038</td>
+                    <td>Fried Chicken(Small)</td>
+                    <td>1200.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1039</td>
+                    <td>Fried Chicken(Regular)</td>
+                    <td>2300.00</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>B1040</td>
+                    <td>Fried Chicken(Large)</td>
+                    <td>3100.00</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>B1041</td>
+                    <td>Hot Wings(Large)</td>
+                    <td>2400.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1042</td>
+                    <td>Devilled Chicken(Large)</td>
+                    <td>900.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1043</td>
+                    <td>BBQ Chicken(Regular)</td>
+                    <td>2100.00</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+            <table border="1">
+                <tr>
+                    <th colspan="4" id="ceterName">Beverages</th>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="4"><img src="img\Beverages.jpg" alt="" width="951px"></td>
+            </tr>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price(LKR)</th>
+                <th>Discount</th>
+            </tr>
+                <tr>
+                    <td>B1044</td>
+                    <td>Pepsi(330ml)</td>
+                    <td>990.00</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>B1026</td>
+                    <td>Coca-Cola(330ml)</td>
+                    <td>1230.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>B1046</td>
+                    <td>Sprite(330ml)</td>
+                    <td>1500.00</td>
+                    <td>3%</td>
+                </tr>
+                <tr>
+                    <td>B1047</td>
+                    <td>Marinda(330ml)</td>
+                    <td>850.00</td>
+                    <td>7%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              
+              <div class="col-md-4 text-end">
+                <button type="button" class="btn btn-primary" onclick="addCustomer()" >Add Customer</button>
+                <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+              </div>
+            </header>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
